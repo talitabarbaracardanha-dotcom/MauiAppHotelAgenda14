@@ -94,7 +94,7 @@
                         <Border StrokeShape="RoundRectangle 12" Stroke="#DDDDDD" BackgroundColor="#F8F8F8" Padding="5,0">
                             <Picker x:Name="pck_quarto"
                                     Title="Selecione sua acomodação"
-                                    HeightRequest="50"
+                                    HeightRequest="60"
                                     TitleColor="Gray"
                                     ItemDisplayBinding="{Binding Descricao}"/>
                         </Border>
