@@ -6,57 +6,78 @@
              BackgroundColor="{StaticResource Gray100}"
              NavigationPage.HasNavigationBar="False">
 
-    <VerticalStackLayout
-        Padding="20"
-        Spacing="20"
-        VerticalOptions="Center">
+    <VerticalStackLayout Padding="25"
+                         Spacing="25"
+                         VerticalOptions="CenterAndExpand">
 
-        <Label 
-            Text="Sobre o Desenvolvedor"
-            FontSize="30"
-            FontFamily="Kalam"
-            HorizontalOptions="Center"
-            TextColor="{StaticResource Primary}"/>
-
-
-        <Frame HeightRequest="170"
-               WidthRequest="170"
-               CornerRadius="85"
-               Padding="0"
-               IsClippedToBounds="True"
+        <Label Text="Sobre o Desenvolvedor"
+               FontSize="32"
+               FontFamily="Kalam"
                HorizontalOptions="Center"
-               BorderColor="{StaticResource Primary}"
-               HasShadow="True">
+               TextColor="{StaticResource Primary}"/>
 
+        <Border HeightRequest="160"
+                WidthRequest="160"
+                StrokeShape="RoundRectangle 80"
+                StrokeThickness="3"
+                Stroke="{StaticResource Primary}"
+                HorizontalOptions="Center">
             <Image Source="talita.png"
                    Aspect="AspectFill"/>
-        </Frame>
+        </Border>
 
-        <Frame BackgroundColor="White"
-               Padding="20"
-               CornerRadius="10">
+        <Border StrokeShape="RoundRectangle 16"
+                BackgroundColor="White"
+                Stroke="#EAEAEA"
+                Padding="20"
+                Margin="10,0">
+            <Border.Shadow>
+                <Shadow Brush="Black" Offset="0,4" Radius="8" Opacity="0.04"/>
+            </Border.Shadow>
 
-            <VerticalStackLayout Spacing="10">
+            <VerticalStackLayout Spacing="15" HorizontalOptions="Center">
 
-                <Label Text="Desenvolvedora"
-                   FontAttributes="Bold" />
+                <VerticalStackLayout Spacing="2" HorizontalOptions="Center">
+                    <Label Text="DESENVOLVEDORA"
+                           FontSize="11"
+                           TextColor="Gray"
+                           HorizontalTextAlignment="Center"
+                           CharacterSpacing="1"
+                           FontAttributes="Bold" />
+                    <Label Text="Talita Barbara Cardanha Lopes"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           TextColor="{StaticResource Primary}" />
+                </VerticalStackLayout>
 
-                <Label Text="Talita Barbara Cardanha Lopes"
-                   TextColor="{StaticResource Primary}" />
+                <BoxView HeightRequest="1" BackgroundColor="#F0F0F0" />
 
-                <Label Text="2026"
-                   FontAttributes="Bold" />
+                <Label Text="Aplicativo moderno desenvolvido em ambiente .NET MAUI para gestão e agendamentos de estadias."
+                       HorizontalTextAlignment="Center"
+                       TextColor="#555555"
+                       FontSize="14"
+                       LineHeight="1.2"/>
 
-                <Label Text="Aplicativo desenvolvido em .NET MAUI."
-                   HorizontalTextAlignment="Center" />
+                <Label Text="© 2026"
+                       FontSize="12"
+                       TextColor="Gray"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold" />
 
             </VerticalStackLayout>
+        </Border>
 
-        </Frame>
-
-        <Button Text="Voltar"
-             Clicked="Button_Clicked"/>
+        <Button Text="Voltar ao Início"
+                BackgroundColor="Transparent"
+                TextColor="{StaticResource Primary}"
+                BorderColor="{StaticResource Primary}"
+                BorderWidth="1.5"
+                HeightRequest="45"
+                CornerRadius="22"
+                WidthRequest="180"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"/>
 
     </VerticalStackLayout>
-
 </ContentPage>
