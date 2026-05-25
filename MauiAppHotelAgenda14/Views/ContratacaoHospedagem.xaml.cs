@@ -1,7 +1,6 @@
-using MauiAppHotel.Models;
-using MauiAppHotelAgenda14.Views;
+    using MauiAppHotelAgenda14.Models;
 
-namespace MauiAppHotel.Views;
+    namespace MauiAppHotelAgenda14.Views;
 
 public partial class ContratacaoHospedagem : ContentPage
 {

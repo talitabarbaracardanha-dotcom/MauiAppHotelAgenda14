@@ -1,7 +1,6 @@
-﻿using MauiAppHotel.Models;
-using Microsoft.Extensions.DependencyInjection;
+﻿using MauiAppHotelAgenda14.Models;
 
-namespace MauiAppHotel
+namespace MauiAppHotelAgenda14
 {
     public partial class App : Application
     {
@@ -13,18 +12,21 @@ namespace MauiAppHotel
                 ValorDiarioAdulto = 110.0,
                 ValorDiarioCrianca = 55.0
             },
+
             new Quarto()
             {
                 Descricao = "Suíte Luxo",
                 ValorDiarioAdulto = 80.0,
                 ValorDiarioCrianca = 40.0
             },
+
             new Quarto()
             {
                 Descricao = "Suíte Single",
                 ValorDiarioAdulto = 50.0,
                 ValorDiarioCrianca = 25.0
             },
+
             new Quarto()
             {
                 Descricao = "Suíte Crise",
@@ -37,15 +39,19 @@ namespace MauiAppHotel
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.ContratacaoHospedagem());
+            MainPage =
+                new NavigationPage(
+                    new Views.ContratacaoHospedagem());
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
+        protected override Window CreateWindow(
+            IActivationState? activationState)
         {
-            var window = base.CreateWindow(activationState);
+            var window =
+                base.CreateWindow(activationState);
 
             window.Width = 400;
-            window.Height = 600;
+            window.Height = 700;
 
             return window;
         }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MauiAppHotel.Models
+namespace MauiAppHotelAgenda14.Models
 {
     public class Quarto
     {

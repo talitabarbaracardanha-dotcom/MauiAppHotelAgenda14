@@ -1,4 +1,4 @@
-namespace MauiAppHotel.Views;
+namespace MauiAppHotelAgenda14.Views;
 
 public partial class Desenvolvedor : ContentPage
 {

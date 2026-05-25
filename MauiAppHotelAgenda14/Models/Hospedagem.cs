@@ -1,6 +1,4 @@
-﻿using MauiAppHotelAgenda14.Models;
-
-namespace MauiAppHotel.Models
+﻿namespace MauiAppHotelAgenda14.Models
 {
     public class Hospedagem
     {
